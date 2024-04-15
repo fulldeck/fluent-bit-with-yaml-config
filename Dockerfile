@@ -2,7 +2,7 @@ ADD file:5d6b639e8b6bcc01149b7486502558088f9816200063ca72b91a1f989bc8d85e in /
 CMD ["bash"]
 ARG RELEASE_VERSION
 ENV FLUENT_BIT_VERSION=3.0.2
-LABEL description=Fluent Bit multi-architecture debug container image vendor=Fluent Organization version=3.0.2-debug author=Eduardo Silva <eduardo@calyptia.com> org.opencontainers.image.description=Fluent Bit debug container image org.opencontainers.image.title=Fluent Bit Debug org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.vendor=Fluent Organization org.opencontainers.image.version=3.0.2-debug org.opencontainers.image.source=https://github.com/fluent/fluent-bit org.opencontainers.image.documentation=https://docs.fluentbit.io/ org.opencontainers.image.authors=Eduardo Silva <eduardo@calyptia.com>
+LABEL description="Fluent Bit multi-architecture debug container image vendor=Fluent Organization version=3.0.2-debug author=Eduardo Silva <eduardo@calyptia.com> org.opencontainers.image.description=Fluent Bit debug container image org.opencontainers.image.title=Fluent Bit Debug org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.vendor=Fluent Organization org.opencontainers.image.version=3.0.2-debug org.opencontainers.image.source=https://github.com/fluent/fluent-bit org.opencontainers.image.documentation=https://docs.fluentbit.io/ org.opencontainers.image.authors=Eduardo Silva <eduardo@calyptia.com>"
 COPY /usr/bin/qemu-arm-static /usr/bin/ # buildkit
 COPY /usr/bin/qemu-aarch64-static /usr/bin/ # buildkit
 ENV DEBIAN_FRONTEND=noninteractive
